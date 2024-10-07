@@ -26,7 +26,7 @@ if st.sidebar.button('Login'):
     if username in users and users[username] == password:
         st.sidebar.success(f'Welcome {username}!')
         # Load your dataset from an Excel file
-        file_path = r'C:\Users\business.analyse\Desktop\Projet prediction\forcasts mat1\dataset_sales_mat1-Copie.xlsx'
+        file_path = os.path.join('data', 'dataset_sales_mat1-Copie.xlsx')  # Assuming the file is placed inside a 'data' folder
         df = pd.read_excel(file_path, sheet_name='Top_20_labs_mat1')
 
         # Convert sales data to billions during import
@@ -44,7 +44,7 @@ if st.sidebar.button('Login'):
         df_long['ds'] = pd.to_datetime(df_long['ds'].astype(str), format='%Y')
 
         # Path to save trained models
-        model_path = r'C:\Users\business.analyse\Desktop\Projet prediction\forcasts mat1\trained_models'
+        model_path = os.path.join('trained_models')  # Assuming the file is placed inside a 'data' folder
         if not os.path.exists(model_path):
             os.makedirs(model_path)
 
