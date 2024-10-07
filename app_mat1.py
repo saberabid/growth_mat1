@@ -15,7 +15,7 @@ users = {
 }
 
 # Create a login form
-st.title('Sales Forecasting with Prophet')
+#st.title('Sales Forecasting with Prophet')
 
 # Login section
 st.sidebar.header('Login')
