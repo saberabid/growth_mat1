@@ -10,8 +10,8 @@ import os
 
 # Hardcoded user credentials
 users = {
-    'Riad.GAHGOUHI': 'password123',
-    'Saber.ABID': 'password456'
+    'Riad.GAHGOUHI': 'InphaSFEBI2018',
+    'Saber.ABID': 'InphaSFEBI2015'
 }
 
 # Create a login form
